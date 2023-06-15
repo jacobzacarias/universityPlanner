@@ -76,3 +76,33 @@ header h1 {
 .calendar .event-yellow {
   background-color: #f0ad4e;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  /* Adjust calendar container for smaller screens */
+  .calendar {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Make table cells stack vertically */
+  .calendar table,
+  .calendar th,
+  .calendar td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-bottom: none;
+  }
+  
+  /* Hide table headers on smaller screens */
+  .calendar th {
+    display: none;
+  }
+  
+  /* Adjust event styles for smaller screens */
+  .calendar .event {
+    margin-bottom: 10px;
+  }
+}
