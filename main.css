@@ -107,3 +107,39 @@ header h1 {
     margin-bottom: 10px;
   }
 }
+/* New functions added to the main program */
+function highlightToday() {
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const month = currentDate.getMonth() + 1; // Months are zero-indexed
+  const year = currentDate.getFullYear();
+  
+  const todayCell = document.querySelector(`.calendar td[data-day="${day}"][data-month="${month}"][data-year="${year}"]`);
+  if (todayCell) {
+    todayCell.classList.add('today');
+  }
+}
+
+function markUpcomingEvents(days) {
+  const today = new Date();
+  const upcomingDate = new Date(today);
+  upcomingDate.setDate(upcomingDate.getDate() + days);
+
+  const upcomingDay = upcomingDate.getDate();
+  const upcomingMonth = upcomingDate.getMonth() + 1; // Months are zero-indexed
+  const upcomingYear = upcomingDate.getFullYear();
+  
+  const upcomingCell = document.querySelector(`.calendar td[data-day="${upcomingDay}"][data-month="${upcomingMonth}"][data-year="${upcomingYear}"]`);
+  if (upcomingCell) {
+    upcomingCell.classList.add('upcoming-event');
+  }
+}
+
+/* Additional CSS styles */
+.calendar .today {
+  background-color: #ffc107; /* Highlight today's cell */
+}
+
+.calendar .upcoming-event {
+  background-color: #e0e0e0; /* Mark upcoming event's cell */
+}
