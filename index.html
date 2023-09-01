@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/calendar.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <title>Your Calendar</title>
+    <title>Calendar Program</title>
+    <link rel="stylesheet" href="calendar-styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Calendar</h1>
+        <h1>My Calendar</h1>
     </header>
-
+    
     <div class="calendar">
-        <!-- Calendar content goes here -->
         <table>
-            <!-- Calendar table content goes here -->
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="event event-red">1</td>
+                    <td class="event event-blue">2</td>
+                </tr>
+                <!-- Add more rows for calendar days here -->
+            </tbody>
         </table>
     </div>
+    
+    <!-- Additional HTML content for the calendar will go here -->
 
-    <script src="scripts/calendar.js"></script>
+    <script src="calendar-scripts.js"></script>
 </body>
 </html>
