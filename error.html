@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar Organizer</title>
+    <style>
+        /* Styles for the calendar */
+        .calendar {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .event {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        /* Purposeful error */
+        .event-error {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar">
+        <h1>My Calendar</h1>
+        <ul>
+            <li class="event">Event 1: Meeting</li>
+            <li class="event">Event 2: Lunch</li>
+            <li class="event-error">Event 3: Purposeful Error</li> <!-- Intentional error -->
+            <li class="event">Event 4: Presentation</li>
+        </ul>
+    </div>
+</body>
+</html>
