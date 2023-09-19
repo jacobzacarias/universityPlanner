@@ -115,3 +115,41 @@ header h1 {
 .calendar .upcoming-event {
   background-color: #e0e0e0; /* Mark upcoming event's cell */
 }
+
+/* Hover effect for calendar elements */
+.calendar td:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.calendar .event:hover {
+  background-color: #135f96;
+}
+
+/* Highlight today's date */
+.calendar .today {
+  background-color: #ffc107;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Highlight weekends */
+.calendar .weekend {
+  background-color: #f5f5f5;
+}
+
+/* Event category styles */
+.calendar .event.category-1 {
+  background-color: #ff5733; /* Red */
+}
+
+.calendar .event.category-2 {
+  background-color: #33ff57; /* Green */
+}
+
+/* Make the header sticky */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
