@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar Program</title>
     <link rel="stylesheet" href="calendar-styles.css">
+    <style>
+        /* Additional CSS for new features */
+        .calendar {
+            text-align: center;
+        }
+
+        .calendar .navigation {
+            margin-bottom: 10px;
+        }
+
+        .calendar .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,6 +34,10 @@
     </header>
     
     <div class="calendar">
+        <div class="navigation">
+            <button id="prevMonth">Previous Month</button>
+            <button id="nextMonth">Next Month</button>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -37,10 +63,50 @@
                 <!-- Add more rows for calendar days here -->
             </tbody>
         </table>
+        <div class="popup" id="eventPopup">
+            <h2>Event Details</h2>
+            <p>Date: <span id="eventDate"></span></p>
+            <p>Event: <span id="eventDetails"></span></p>
+            <button id="closePopup">Close</button>
+        </div>
     </div>
     
     <!-- Additional HTML content for the calendar will go here -->
 
     <script src="calendar-scripts.js"></script>
+    <script>
+        // JavaScript for new features
+        const prevMonthBtn = document.getElementById('prevMonth');
+        const nextMonthBtn = document.getElementById('nextMonth');
+        const eventPopup = document.getElementById('eventPopup');
+        const eventDate = document.getElementById('eventDate');
+        const eventDetails = document.getElementById('eventDetails');
+        const closePopupBtn = document.getElementById('closePopup');
+
+        // Handle previous month button click
+        prevMonthBtn.addEventListener('click', () => {
+            // Implement logic to switch to the previous month
+        });
+
+        // Handle next month button click
+        nextMonthBtn.addEventListener('click', () => {
+            // Implement logic to switch to the next month
+        });
+
+        // Handle calendar cell click to display event details
+        const calendarCells = document.querySelectorAll('.event');
+        calendarCells.forEach(cell => {
+            cell.addEventListener('click', () => {
+                eventDate.textContent = 'Date: ' + cell.textContent;
+                eventDetails.textContent = 'Event Details: Your Event Details Here';
+                eventPopup.style.display = 'block';
+            });
+        });
+
+        // Handle close popup button click
+        closePopupBtn.addEventListener('click', () => {
+            eventPopup.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
