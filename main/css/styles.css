@@ -1,0 +1,59 @@
+/* Adjust font size for smaller screens */
+.calendar td {
+  font-size: 14px;
+}
+
+/* Highlight today's date */
+.calendar .today {
+  background-color: #f5f5f5;
+}
+
+/* Highlight selected date */
+.calendar .selected {
+  background-color: #ddd;
+}
+
+/* Add hover effect to table rows */
+.calendar tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Add a border to the header */
+header {
+  border-bottom: 2px solid #ddd;
+}
+
+/* Add spacing to events */
+.calendar .event {
+  margin-right: 5px;
+}
+
+/* Add an icon to events */
+.calendar .event:before {
+  content: "\f0a5";
+  font-family: "Font Awesome";
+  margin-right: 5px;
+}
+
+/* Add custom colors for events */
+.calendar .event-orange {
+  background-color: #ff9800;
+}
+
+.calendar .event-purple {
+  background-color: #9c27b0;
+}
+
+.calendar .event-pink {
+  background-color: #e91e63;
+}
+
+/* Add responsive styles for events */
+@media screen and (max-width: 600px) {
+  .calendar .event {
+    font-size: 12px;
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
