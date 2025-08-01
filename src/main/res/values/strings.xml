@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Learn Planner</string>
+    <string name="progress_spinner">ProgressSpinner</string>
+    <string-array name="list_progress">
+        <item>Currently Enrolled</item>
+        <item>Passed</item>
+        <item>Removed</item>
+        <item>Scheduled</item>
+    </string-array>
+    <string name="type_spinner">TypeSpinner</string>
+    <string name="share">Share</string>
+    <string-array name="list_type">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+    <string name="save_text">Save</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="share_note">Share Note</string>
+    <string name="edit_text">Edit</string>
+    <string name="add_term">Add Term</string>
+    <string name="add_course">Add Course</string>
+    <string name="add_note">Add Note</string>
+    <string name="delete_term">Delete Term</string>
+    <string name="delete_course">Delete Course</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="delete_assessment">Delete Assessment</string>
+    <string name="view_course">View Course</string>
+    <string name="view_note">View Note</string>
+    <string name="view_term">View Term</string>
+    <string name="view_assessment">View Assessment</string>
+    <string name="view_all_terms">View All Terms</string>
+
+    <string name="start_date">Start Date:</string>
+    <string name="end_date">End Date:</string>
+    <string name="title">Title:</string>
+    <string name="information">Information:</string>
+    <string name="course_title">Course Title:</string>
+    <string name="name">Instructor:</string>
+    <string name="email">Email:</string>
+    <string name="number">Phone Number:</string>
+    <string name="type">Type:</string>
+    <string name="note">Notes</string>
+    <string name="term_title">Term:</string>
+    <string name="instructor_name">Instructor Name:</string>
+
+    <string name="courses_section">Courses</string>
+    <string name="assessments_section">Assessments</string>
+
+    <string name="term_name_placeholder">Term Name</string>
+    <string name="course_name_placeholder">Course Name</string>
+
+    <string name="assessment_title_clue">Project</string>
+    <string name="course_title_clue">Android Development</string>
+    <string name="date_hint">yyyy-MM-dd</string>
+    <string name="course_info_clue">Course information</string>
+    <string name="email_clue">instructor@wgu.edu</string>
+    <string name="number_clue">123–456–7890</string>
+    <string name="instructor_name_hint">Name Hint</string>
+    <string name="term_title_hint">Term 4</string>
+    <string name="write_note_here_hint">Write note</string>
+    <string name="add_details_hint">Add details</string>
+
+    <string name="menu_update_term">Update Term</string>
+    <string name="menu_add_note">Add Note</string>
+    <string name="menu_add_assessment">Add Assessment</string>
+    <string name="menu_update_course">Update Course</string>
+    <string name="menu_notify_start">Notify Start Date</string>
+    <string name="menu_notify_end">Notify End Date</string>
+
+    <string name="item_list">Item List</string>
+    <string name="create_note">Note: Remember to read the course announcements</string>
+    <string name="create_instructor">Add Instructor</string>
+    <string name="view_all_instructors">All Instructors</string>
+    <string name="view_instructors">View Instructor</string>
+    <string name="delete_instructors">Delete Instructor</string>
+    <string name="back_text">Back</string>
+</resources>
